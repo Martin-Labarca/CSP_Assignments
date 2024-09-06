@@ -1,1 +1,3 @@
-print("This is where i do my work!")
+name = "Martin"
+
+print(name)
