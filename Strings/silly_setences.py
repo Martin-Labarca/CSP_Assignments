@@ -1,9 +1,11 @@
 def main():
-    word1 = input("Please enter a word: ")
-    word2 = input("Now, enter another word: ")
-    word3 = input("Now, enter a last word: ")
+    animal = input("Name an animal: ")
+    place = input("Name a place: ")
+    verb = input("Name a past tense verb: ")
 
-    print(f"Once upon a time, a {word1} decided to use a {word2} instead of a {word3}.")
+    sentence = f"{animal} went to the {place} and {verb} with his friend the angry turtle.\n"
+    
+    print(sentence)
 
 if __name__ == "__main__":
     main()
