@@ -1,18 +1,23 @@
 #include <stdio.h>
+#include <string.h>
 
-int main() {
-    char word1[50], word2[50], word3[50];
-
-    printf("Please enter a word: ");
-    scanf("%49s", word1);
-
-    printf("Now, enter the second word: ");
-    scanf("%49s", word2);
-
-    printf("Now, enter the last word: ");
-    scanf("%49s", word3); 
-    
-    printf("Once upon a time, a %s decided to use a %s when it needed to use a %s.\n", word1, word2, word3);
-
+int main(void){
+    char animal[20];
+    char place[20];
+    char verb[20];
+    char setence[400];
+    printf("Name an animal: ");
+    fgets(animal, sizeof(animal), stdin);
+    printf("Name a place: ");
+    fgets(place, sizeof(place), stdin);
+    printf("Name a past tense verb: ");
+    fgets(verb, sizeof(verb), stdin);
+    strcat(setence, animal);
+    strcat(setence, " went to the ");
+    strcat(setence, place);
+    strcat(setence, " and ");
+    strcat(setence, verb);
+    strcat(setence, "with his friend the angry turtle.\n");
+    printf("%s", setence);
     return 0;
 }
