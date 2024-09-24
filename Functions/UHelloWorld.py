@@ -1,4 +1,8 @@
-def hello(name):
-    return f"Hello{name}!"
+def say_hello(name):
+    print(f"Hello, {name}!")
 
-print(hello ("Maria"))
+say_hello("Alice")
+say_hello("Bob")
+say_hello("Charlie")
+say_hello("Diana")
+say_hello("Eve")
