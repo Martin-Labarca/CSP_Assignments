@@ -1,6 +1,13 @@
 #include <stdio.h>
 float income, rent, utilities, groceries, transportation, savings, expenses, spend;
 
+float input(char type[], float var){
+    printf("Montlhy %s:\n", type);
+    scanf("%f", &var);
+    return var;
+}
+
+
 void percent(char type[], int amount){
     int per = amount/income *100;
 
@@ -9,16 +16,12 @@ void percent(char type[], int amount){
 
 
 int main(void){
-    printf("This is a budger calculator.\n How much do you make a month?\n");
-    scanf("%f", &income);
-    printf("How much your rent cost?\n");
-    scanf("%f", &rent);
-    printf("How much your utilities cost?\n");
-    scanf("%f", &utilities);
-    printf("How much do your grocieries cost?\n");
-    scanf("%f", &groceries);
-    printf("How much your transportation cost?\n");
-    scanf("%f", &transportation);
+    printf("This is a budget calculator.\n");
+    income = input("income", income);
+    rent = input("rent", rent);
+    utilities = input("utulities", utilities);
+    groceries = input("groceries", groceries);
+    transportation = input("transportation", transportation);
     savings = income * .2; 
     expenses = rent + utilities + groceries + transportation;
     spend = income - expenses - savings;
