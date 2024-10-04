@@ -1,9 +1,10 @@
 #include <stdio.h>
-
-int main(void){
-	char name[9];
-	printf("Hello, what is your name?\n");
-	scanf("%s", name);
-	printf("Hello %s\n", name);
-	return 0;
+intmain(void) {
+  introduction = ("Hello!");
+  char name [30];
+printf("introduction");
+  printf("What is your name: \n");
+  scanf("%s", &name);
+  printf("Hello %s, name");
+    return 0;
 }
