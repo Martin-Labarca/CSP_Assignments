@@ -1,5 +1,5 @@
-people = ["Aaron", "Nate", "Tate", "Mason", "Daniel"]
+Friends = ["Aaron", "Nate", "Tate", "Mason", "Daniel"]
 
 
-for person in people:
-    print(f"Hello, {person}!")
+for Friends in Friends:
+    print(f"Hello, {Friends}!")
