@@ -1,4 +1,3 @@
-# Get user input
 usr = int(input("Give me a number\n"))
 one = input("Give me a short word!\n")
 two = input("Give me another short word!\n")
