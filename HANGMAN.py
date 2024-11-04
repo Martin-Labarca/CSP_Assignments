@@ -1,7 +1,7 @@
 import random
 
 # List of words for the game
-words = ["snow", "wolf", "moon", "star", "lamp"]  # Add more words as needed
+words = ["snow", "wolf", "moon", "star", "lamp", "nate", "sans", "kill", "fill", "tate", "bruh"]  # Add more words as needed
 
 # Function to display the gallows based on the number of incorrect guesses
 def display_gallows(incorrect_guesses):
